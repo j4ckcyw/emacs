@@ -13,3 +13,6 @@
 ;; relative line number
 (require 'relative-line-numbers)
 (global-relative-line-numbers-mode)
+
+;; show matching parenthesis
+(show-paren-mode t)

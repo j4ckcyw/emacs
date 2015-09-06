@@ -29,3 +29,7 @@
   '(perl-indent-level 2)
   '(js-indent-level 2)
 )
+
+(require 'auto-complete-config)
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
+(ac-config-default)

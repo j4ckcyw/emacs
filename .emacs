@@ -17,6 +17,9 @@
 ;; show matching parenthesis
 (show-paren-mode t)
 (custom-set-variables
+  '(relative-line-numbers-format (lambda (offset)
+    "Set width to 3 digits followed by a space"
+    (format "%3d " (abs offset))))
   ;; soft tabs in most places
   ;;'(indent-tabs-mode nil)
   ;; 2 spaces is a nice true tab size
